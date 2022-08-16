@@ -4,7 +4,7 @@ from django.db import models
 
 
 class Photo(models.Model):
-    image = models.ImageField(upload_to='photos/')
+    image = models.ImageField()  # Save in default MEDIA_ROOT loc defined in settings.py
     downloads = models.IntegerField(default=0)
     title = models.TextField(max_length=200, default='title')
 
