@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
+import ResponsiveAppBar from "./ResponseiveAppBar";
 
 export default class App extends Component {
   constructor(props) {
@@ -8,7 +9,11 @@ export default class App extends Component {
 
   render() {
     return (
-      <h1>first react home</h1>
+      <div>
+        <div>
+          <ResponsiveAppBar />
+        </div>
+      </div>
     );
   }
 }
