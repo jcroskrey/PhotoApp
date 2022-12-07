@@ -44,7 +44,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
     'home',
-    'frontend.apps.FrontendConfig'
+    'frontend.apps.FrontendConfig',
+    'imagekit',
 ]
 
 MIDDLEWARE = [
@@ -134,4 +135,5 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Set media path
-MEDIA_ROOT = os.path.join(BASE_DIR, 'home/photos')
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'home/media')
